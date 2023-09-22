@@ -894,11 +894,11 @@ a.more {
             font-size: 1rem;
             margin: 1em 0;
             @include screen('mobile') {
-               margin: 1em 0 1em -1em; 
-           }
+             margin: 1em 0 1em -1em; 
+         }
 
-       }
-       .extensionNum{
+     }
+     .extensionNum{
         font-size: 1rem;
         line-height: 1.6em;
         font-weight: normal;
@@ -915,23 +915,23 @@ a.more {
             padding: 0 0 0 1em;
 
             &:before{
-               content:'·';
-               position: absolute;
-               left:0;
-               top:0;
-               width: 1em;
-               height: 1em;               
-           }
+             content:'·';
+             position: absolute;
+             left:0;
+             top:0;
+             width: 1em;
+             height: 1em;               
+         }
 
 
-       }
-   }
+     }
+ }
 }
 }
 
 //newsaccount
 .newsaccount{
-    margin: 2em 90px;
+    margin: 100px 90px 2em;
     display: block;
     position: relative;
     clear: both;
