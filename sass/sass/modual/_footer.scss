@@ -1,0 +1,115 @@
+footer {
+    box-sizing: border-box;
+    @include clearfix;
+    text-align: left;
+    margin-top: -80px;
+    font-weight: normal;
+    font-size: .938em;
+    @include screen('tablet') {
+     margin-top: 0; 
+ }
+
+
+ .container {
+    background: url('../images/footer_bg.png')no-repeat left bottom;
+    background-size: 1200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    min-height: 100px;
+    @include screen('tablet') {
+        background: url('../images/footer_bg.png')repeat-y left bottom;
+        background-size: auto 360px;
+
+    }
+    @include screen('mobile') {
+            // @include gutter(60px);
+        }
+
+        @include screen('xs_mobile') {
+            // @include gutter(30px);
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+
+        &:hover,
+        &:focus {
+            color: darken($primaryColor, 10);
+        }
+    }
+
+    .Copyright {
+        flex: 1 1 40%;
+        p{
+            margin: .5em;
+        }
+
+        @include screen('tablet') {
+            p{
+                margin: 0 1em .5em;
+            }
+        }
+        @include screen('tablet') {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+
+    .footer_link {
+        flex: 1 1 40%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include li-reset();
+        @include clearfix();
+
+        @include screen('tablet') {
+            flex: 1 1 100%;
+        }
+
+        li {
+            flex: 0 1 auto;       
+
+            a {
+                display: block;
+                padding: .5em 1em;
+                color: $importantColor;
+                transition: all .3s ease-out;
+                white-space: nowrap;
+                position: relative;
+
+                &:hover,
+                &:focus {
+                    color: $aHover;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - .4em);
+                    left: 0;
+                    display: block;
+                    width: 1px;
+                    height: .8em;
+                    background: $secondaryColor;
+                }
+            }
+            &:first-child{
+                a{
+                 &:before {
+                    display: none;
+                } 
+            }
+        }
+
+    }
+}
+
+
+
+
+}

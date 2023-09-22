@@ -1,0 +1,171 @@
+.lp {
+    table {
+        td {
+
+            &.date {
+                text-align: center;
+                color: #666;
+
+                @include screen('mobile') {
+                    text-align: left;
+                }
+            }
+
+            &.num {
+                text-align: center;
+                color: #666;
+
+                @include screen('mobile') {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+}
+
+.list {
+    margin-bottom: 1em;
+    &>ul,
+    ol {
+        list-style-type: none;
+        padding: 0;
+        // border-top: 1px solid $secondaryColor;
+
+        &>li {
+            display: flex;
+            padding: 0 1em;
+            align-items: center;
+            // border-bottom: 1px solid $secondaryColor;
+            position: relative; // outline: 1px solid blue;
+            @include screen('mobile'){
+                flex-wrap: wrap;
+            }
+            &:hover, &:focus{
+                background: #ECECEC;
+                border-radius: 3em;
+                @include screen('mobile') {
+                    border-radius: 10px;
+                }
+            }
+
+            .tag {
+                margin-left: 2em;
+            }
+
+            &>a {
+                flex-basis: calc(100% - 140px);
+                overflow: hidden;
+                display: block;
+                padding: 1.2em 0;
+                position: relative;
+                line-height: 1.45em;
+                color: $color-word;
+                text-align: left;
+                @include screen('mobile'){
+                    flex-basis: 100%;
+                    padding: 1em 0;
+                }
+
+                &:hover, &:focus {
+                    color: $aHover;
+                    .list_title{
+                        // text-decoration: underline;
+                    }
+                }
+
+                .num {
+                    width: 1.5em;
+                    text-align: right;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    &:after {
+                        content: ".";
+                        display: inline-block;
+                    }
+                }
+                p{
+                    margin-bottom: 0;
+                }
+            }
+
+            // span.dept {
+            //     display: inline-block;
+            //     font-size: .938em;
+
+            //     @include screen("mobile") {
+            //         display: block;
+            //     }
+            // }
+
+            time {
+                display: block;
+                flex: 0 0 9em;
+                padding: 1.2em 0;
+                text-align: center;
+                color: $primaryColor;
+                font-size: .875em;
+                font-weight: bold;
+                font-family: 'Verdana', sans-serif;
+                // border-bottom: 3px solid $secondaryColor;
+                @include screen('mobile'){
+                    // border-top: 3px solid $secondaryColor;
+                    border-bottom: 0;
+                    padding: 1em 0 0 0;
+                    flex-basis: auto;
+                }
+
+            }
+            .list_title{
+                // white-space: nowrap;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+                font-weight: bold;
+            }
+            .new_img{
+                width: 32px;
+                margin-left: .3em;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.video_list {
+    margin: 1em auto;
+    ul {
+        @include li-reset;
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:stretch;
+        flex-wrap:wrap;
+        li{
+            flex-basis: calc(100% / 3 - 2em);
+            margin: 1em;
+            @include screen('tablet'){
+                flex-basis: calc(50% - 2em);
+            }
+            @include screen('xs_mobile'){
+                flex-basis: calc(100% - 2em);
+            }
+            .time{
+                display: inline-block;
+                vertical-align: middle;
+                font-size: .875em;
+                font-weight: normal;
+                margin: 0 5px;
+            }
+        }
+        .video_box{
+            iframe{
+                height: 220px;
+                @include screen('xs_mobile'){
+                    height: 280px;
+                }
+            }
+        }
+    }
+}

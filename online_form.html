@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>財團法人車輛研究測試中心 檢測服務系統</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <!-- <link href="images/favicon.png" rel="icon" type="image/x-icon"> -->
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <div class="header_top">
+                    <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                    <h1>
+                        <a href="index.html"><img src="images/logo.png" alt="財團法人車輛研究測試中心 檢測服務系統" /></a>
+                    </h1>
+                    <!-- navigation Start -->
+                    <nav class="navigation" role="navigation" aria-label="Site">
+                        <!-- 新增div navlist -->
+                        <div class="navlist">
+                            <ul>
+                                <li><a href="#">回首頁</a></li>
+                                <li><a href="#">網站導覽</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- navigation End -->
+                    <!-- logout -->
+                    <div class="logout">
+                        <div class="titlename">大客戶</div>
+                        <ul>
+                            <li>登出時間 19:59</li>
+                            <li><a href="#">登出</a></li>
+                        </ul>
+                    </div>
+                    <!-- logout end -->
+                </div>
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+
+
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+
+        <div id="center" class="main innerpage">
+            <!-- 內頁新增一個classname-->
+
+            <div class="container">
+
+                <!-- 主要內容區 -->
+                <!-- left_block  -->
+                <div class="left_block">
+                    <!-- menu Start -->
+                    <nav class="menu" role="navigation" aria-label="左方主選單">
+                        <ul>
+                            <li><a href="#">個人首頁</a>
+                                <ul>
+                                    <li><a href="#">第二層選單</a></li>
+                                    <li><a href="#">第二層選單</a></li>
+                                    <li><a href="#">第二層選單</a></li>
+                                    <li><a href="#">第二層選單</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">個人帳號資料維護</a>
+                                <ul>
+                                    <li><a href="#">第二層選單</a></li>
+                                    <li><a href="#">第二層選單</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">案件申請及維護</a></li>
+                            <li><a href="#">案件進度查詢(流程中)</a></li>
+                            <li><a href="#">案件查詢(已結案)</a></li>
+                            <li><a href="#">表單下載</a></li>
+                            <li><a href="#">客戶滿意度調查</a></li>
+                        </ul>
+                    </nav>
+                    <!-- menu End -->
+                </div>
+                <!-- left_block  end-->
+
+                <!-- center_block -->
+                <div class="center_block">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li>
+                                <a href="/sha/public/home.action?codeVerify=">
+                                    首頁
+                                </a>
+                            </li>
+                            <li>新增公司登入帳號 </li>
+                        </ul>
+                    </div>
+
+                    <section class="titleBlock">
+                        <h2 class="title">請填寫註冊資料</h2>
+                    </section>
+
+                    <div class="int" ">以下所有欄位皆為必填，請務必確認資料填寫正確，並於一個月之內申請工商憑證，以利後續登入系統與申請案件。</div>
+
+                    <form id="addPersonalAccount" name="addPersonalAccount" action="/sha/public/member/addPersonalAccount.action" method="POST">
+                        <input type="hidden" name="codeVerify" value="" id="addPersonalAccount_codeVerify">
+                        <input type="hidden" name="targetObject.address" value="" id="address">
+                        <input type="hidden" name="pageToken" value="t115L1Ie" id="addPersonalAccount_pageToken">
+
+                        <div class="flex-form form_grid">
+                            <div class="form_grp">
+                                <label for="targetObject.name" class="form_title">
+                                    公司名稱：
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="targetObject.name" value="" id="name" class="text">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.idn" class="form_title">
+                                    公司統編：
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="targetObject.idn" size="8" value="" id="idn" class="text">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.county" class="form_title">
+                                    縣市：
+                                </label>
+                                <div class="form_content">
+                                    <select name="targetObject.county" id="inputId" onchange="input2Output();">
+                                        <option value="8a8a848d48cb04200148ceecb1e0000d">基隆市</option>
+                                        <option value="8a8a9bad48c5a5ea0148c5a8445b0003">臺北市</option>
+                                        <option value="8a8a9bad48c5a5ea0148c5a8702c0004">新北市</option>
+                                        <option value="8a8a848d48cb04200148ceed1628000e">桃園市</option>
+                                        <option value="8a8a848d48cb04200148ceedb73b000f">新竹市</option>
+                                        <option value="8a8a848d48cb04200148cef3af100011">新竹縣</option>
+                                        <option value="8a8a848d48cb04200148cef3e8310012">苗栗縣</option>
+                                        <option value="8a8a848d48cb04200148cef41d4b0013">臺中市</option>
+                                        <option value="8a8a848d48cb04200148cef4491e0014">彰化縣</option>
+                                        <option value="8a8a848d48cb04200148cef46c750015">南投縣</option>
+                                        <option value="8a8a848d48cb04200148cef4a4fa0016">雲林縣</option>
+                                        <option value="8a8a848d48cb04200148cef4d5ed0017">嘉義市</option>
+                                        <option value="8a8a848d48cb04200148cef508e40018">嘉義縣</option>
+                                        <option value="8a8a848d48cb04200148cef533dc0019">臺南市</option>
+                                        <option value="8a8a848d48cb04200148cef5587b001a">高雄市</option>
+                                        <option value="8a8a848d48cb04200148cef57b93001b">屏東縣</option>
+                                        <option value="8a8a848d48cb04200148cef59d73001c">臺東縣</option>
+                                        <option value="8a8a848d48cb04200148cef5d4cf001d">花蓮縣</option>
+                                        <option value="8a8a848d48cb04200148cef5fe60001e">宜蘭縣</option>
+                                        <option value="8a8a848d48cb04200148cef61fb3001f">澎湖縣</option>
+                                        <option value="8a8a848d48cb04200148cef697f00020">金門縣</option>
+                                        <option value="8a8a848d48cb04200148cef6d48c0021">連江縣</option>
+                                        <option value="8a8a848d49ad4fed0149ad8033ae0005">其他</option>
+
+
+                                    </select>
+
+
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.township" class="form_title">
+                                    鄉鎮市區：
+                                </label>
+                                <div class="form_content">
+
+                                    <select name="targetObject.township" id="outputId">
+                                        <option value="">請選擇</option>
+                                        <option value="">-- 請選擇 --</option>
+
+
+                                    </select>
+
+
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.tmpAddress" class="form_title">
+                                    地址：
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="targetObject.tmpAddress" size="20" value="" id="tmpAddress">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.contactTel" class="form_title">
+                                    公司電話：
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="targetObject.contactTel" value="" id="tel">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.fax" class="form_title">
+                                    公司傳真：
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="targetObject.fax" value="" id="fax">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.fax" class="form_title">
+                                    聯絡地址：
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="targetObject.fax" value="" id="fax">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="targetObject.email" class="form_title">
+                                    email：
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="targetObject.email" value="" id="email">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="loginCodeVerify" class="form_title">
+                                    驗證碼：
+                                </label>
+                                <div class="form_content">
+                                    <input type="input" class="text" name="loginCodeVerify" size="7">
+                                    <div class="number">
+                                        <img alt="驗證碼" src="images/codeImageServlet.jpeg" align="absmiddle">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn_grp form_inline">
+                                <button class="btn btn-submit" type="button" onclick="doSubmit();">送出</button>
+                                <button class="btn btn-reset" type="reset">重設</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </section>
+            <!-- CP End -->
+        </div>
+        <!-- center_block end -->
+    </div>
+</div>
+<!-- footer Start-->
+<footer>
+    <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+
+        <ul class="footer_link">
+            <li><a href="javascript:;">隱私權宣告</a></li>
+            <li><a href="javascript:;">網頁安全政策</a></li>
+        </ul>
+        <div class="Copyright">
+            <p>財團法人車輛研究測試中心 版權所有 © 2023 All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<!-- footer End -->
+</div>
+<a href="javascript:;" class="scrollToTop">回頁首</a>
+<!-- JQ -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<!-- 外掛 plugin js -->
+<script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+<script src="vendor/slick/slick.min.js "></script><!-- slick -->
+<script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+<script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+<script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+<script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+<!-- 燈箱facybox -->
+<script src="vendor/facybox/dist/jquery.fancybox.min.js"></script>
+<!-- hyUI -->
+<script src="js/hyui.js"></script>
+<!-- 客製js -->
+<script src="js/customize.js"></script>
+</body>
